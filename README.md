@@ -4,7 +4,7 @@ Melomel Examples
 ## DESCRIPTION
 
 This repository is a collection of various
-(Melomel)[http://github.com/benbjohnson/melomel] examples. This code should be
+[Melomel](http://github.com/benbjohnson/melomel) examples. This code should be
 an example of how to get started using Melomel.
 
 The following examples are available:
@@ -20,7 +20,7 @@ Each project has an individual `README` file for instructions on how to get the
 project running. However, there are a couple steps you must complete for all
 example projects.
 
-First, install (Ruby)[http://www.ruby-lang.org].
+First, install [Ruby](http://www.ruby-lang.org).
 
 Next clone the examples repository:
 
