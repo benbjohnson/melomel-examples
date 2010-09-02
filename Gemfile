@@ -1,0 +1,5 @@
+source 'http://rubygems.org'
+gem 'sinatra', '~> 1.0.0'
+gem 'firewatir', '~> 1.6.5'
+gem 'safariwatir', '~> 0.3.8'
+gem 'cucumber',  '~> 0.8.5'

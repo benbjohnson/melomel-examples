@@ -12,7 +12,6 @@ The following examples are available:
 * `cuke-spark` - Flex 4 Spark testing using Cucumber.
 * `cuke-halo` - Flex 4 Halo testing using Cucumber.
 * `cuke-air` - Desktop AIR application testing using Cucumber.
-* `cuke-web` - Web-based Flash testing using Cucumber.
 
 
 ## GETTING STARTED
@@ -30,6 +29,7 @@ Next clone the examples repository:
 Then install Bundler and the gem dependencies:
 
 	cd melomel-examples/
+	[sudo] gem update --system
 	[sudo] gem install bundler
 	[sudo] bundle install
 
