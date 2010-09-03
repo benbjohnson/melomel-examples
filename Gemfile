@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 gem 'sinatra', '~> 1.0.0'
-gem 'firewatir', '~> 1.6.5'
-gem 'safariwatir', '~> 0.3.8'
+gem 'selenium-webdriver', '~> 0.0.28'
+gem 'rspec',  '~> 1.3.0'
 gem 'cucumber',  '~> 0.8.5'
+gem 'melomel',  '~> 0.2.0'

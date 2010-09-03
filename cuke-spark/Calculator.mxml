@@ -1,34 +1,88 @@
 <s:Application
 	xmlns:fx="http://ns.adobe.com/mxml/2009"
 	xmlns:s="library://ns.adobe.com/flex/spark"
+	name="Calculator!"
 	creationComplete="Melomel.connect()"
 >
 	<s:layout>
 		<s:VerticalLayout/>
 	</s:layout>
 	
+	<fx:Script>
+		<![CDATA[
+		private var lastValue:Number = NaN;
+		private var valueString:String = "";
+		
+		[Bindable]
+		private var operation:String;
+		
+		private function append(char:String):void
+		{
+			valueString += char;
+			display.text = valueString;
+		}
+
+		private function add():void
+		{
+			operation = "add";
+			lastValue = parseFloat(display.text);
+			valueString = "";
+		}
+
+		private function subtract():void
+		{
+			operation = "subtract";
+			lastValue = parseFloat(display.text);
+			valueString = "";
+		}
+
+		private function equals():void
+		{
+			if(operation == "add") {
+				display.text = new String(lastValue + parseFloat(display.text));
+			}
+			else if(operation == "subtract") {
+				display.text = new String(lastValue - parseFloat(display.text));
+			}
+
+			operation = null;
+			valueString = "";
+		}
+		
+		private function clear():void
+		{
+			operation = null;
+			lastValue = NaN;
+			valueString = "";
+			display.text = "0";
+		}
+
+		]]>
+	</fx:Script>
+	
+	<s:TextInput id="display" width="136" restrict="0-9" textAlign="right" text="0"/>
+	
 	<s:HGroup>
-		<s:Button label="7"/>
-		<s:Button label="8"/>
-		<s:Button label="9"/>
-		<s:Button label="/"/>
+		<s:Button width="30" label="7" click="append('7')"/>
+		<s:Button width="30" label="8" click="append('8')"/>
+		<s:Button width="30" label="9" click="append('9')"/>
 	</s:HGroup>
 	<s:HGroup>
-		<s:Button label="4"/>
-		<s:Button label="5"/>
-		<s:Button label="6"/>
-		<s:Button label="x"/>
+		<s:Button width="30" label="4" click="append('4')"/>
+		<s:Button width="30" label="5" click="append('5')"/>
+		<s:Button width="30" label="6" click="append('6')"/>
+		<s:Button width="30" label="-" click="subtract()"/>
 	</s:HGroup>
 	<s:HGroup>
-		<s:Button label="1"/>
-		<s:Button label="2"/>
-		<s:Button label="3"/>
-		<s:Button label="-"/>
+		<s:Button width="30" label="1" click="append('1')"/>
+		<s:Button width="30" label="2" click="append('2')"/>
+		<s:Button width="30" label="3" click="append('3')"/>
+		<s:Button width="30" label="+" click="add()"/>
 	</s:HGroup>
 	<s:HGroup>
-		<s:Button label="0"/>
-		<s:Button label="."/>
-		<s:Button label="c"/>
-		<s:Button label="+"/>
+		<s:Button width="30" label="0"/>
+		<s:Button width="30" label="." click="append('.')"/>
+		<s:Button width="30" label="c" click="clear()"/>
+		<s:Button width="30" label="=" click="equals()"/>
 	</s:HGroup>
 </s:Application>
