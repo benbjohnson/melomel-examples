@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<application xmlns="http://ns.adobe.com/air/application/2.0">
+    <id>calc</id>
+    <version>1.0</version>
+    <filename>calc</filename>
+    <name>calc</name>
+    <initialWindow>
+        <title>calc</title>
+        <content>calc.swf</content>
+        <systemChrome>standard</systemChrome>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <minimizable>true</minimizable>
+        <maximizable>false</maximizable>
+        <resizable>true</resizable>
+        <x>0</x>
+        <y>0</y>
+        <width>640</width>
+        <height>480</height>
+    </initialWindow> 
+    <installFolder>Calc</installFolder>
+    <programMenuFolder>Melomel</programMenuFolder>
+    <customUpdateUI>false</customUpdateUI>
+    <allowBrowserInvocation>false</allowBrowserInvocation>
+</application>
