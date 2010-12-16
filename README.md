@@ -10,8 +10,7 @@ an example of how to get started using Melomel.
 The following examples are available:
 
 * `cuke-spark` - Flex 4 Spark testing using Cucumber.
-* `cuke-halo` - Flex 4 Halo testing using Cucumber. (Coming soon)
-* `cuke-air` - Desktop AIR application testing using Cucumber. (Coming soon)
+* `cuke-spark-air` - Desktop AIR application testing using Cucumber.
 
 
 ## GETTING STARTED
@@ -36,8 +35,7 @@ Then install Bundler and the gem dependencies:
 Make sure you have Flex 4 installed and that you have an environment variable
 named `FLEX_HOME` set to its path.
 
-Next, follow the instructions on the
-[FireWatir Installation](http://wiki.openqa.org/display/WTR/FireWatir+Installation)
-wiki.
+The examples use Google Chrome for testing so you will need to install it before
+running your tests.
 
 Finally, follow the steps included for the specific example you're working with.
