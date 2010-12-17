@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 gem 'sinatra', '~> 1.0.0'
-gem 'selenium-webdriver', '~> 0.0.28'
-gem 'rspec',  '~> 1.3.0'
+gem 'selenium-webdriver', '~> 0.1.1'
+gem 'rspec',  '~> 2.3.0'
 gem 'cucumber',  '~> 0.8.5'
 gem 'melomel',  '~> 0.6.0'

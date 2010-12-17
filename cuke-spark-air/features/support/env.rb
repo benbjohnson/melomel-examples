@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
-require 'spec'
+require 'rspec'
 require 'cucumber'
 require 'melomel'
 

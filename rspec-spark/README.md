@@ -1,4 +1,4 @@
-Cucumber & Spark Example
+RSpec & Spark Example
 =============================================
 
 ## GETTING STARTED
@@ -11,8 +11,8 @@ In a separate window, start the local web server:
 
 	ruby http.rb
 
-Finally, run the Cucumber tests:
+Finally, run the RSpec tests:
 
-	cucumber
+	rspec spec
 
 All tests should complete without error.

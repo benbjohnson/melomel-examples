@@ -5,7 +5,7 @@ Cucumber & Spark Example
 
 To run this example, first compile the Flex application:
 
-	ant build
+	ant
 
 Finally, run the Cucumber tests:
 

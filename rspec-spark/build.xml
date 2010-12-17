@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="cuke-spark" basedir="." default="build">
+<project name="rspec-spark" basedir="." default="build">
 	<!-- Properties -->
 	<property environment="env"/>
 	<property name="FLEX_HOME" value="${env.FLEX_HOME}"/>
@@ -7,18 +7,18 @@
 
 	<property name="target.dir" value="${basedir}/target"/>
 
-	<!-- mxmlc -debug -include-libraries+=../lib/melomel-0.1.0.swc -o=calc.swf Calculator.mxml -->
+	<!-- mxmlc -debug -include-libraries+=../lib/melomel-0.6.2.swc -o=hello.swf HelloWorld.mxml -->
 	<target name="build">
 		<java jar="${mxmlc.jar}" fork="true" failonerror="true">
 			<arg value="-debug"/>
 			<arg value="+flexlib=${FLEX_HOME}/frameworks"/>
 			<arg value="-include-libraries+=../lib/melomel-0.6.2.swc"/>
-			<arg value="-o=calc.swf"/>
-			<arg value="Calculator.mxml"/>
+			<arg value="-o=hello.swf"/>
+			<arg value="HelloWorld.mxml"/>
 		</java>
 	</target>
 
 	<target name="clean">
-		<delete file="calc.swf"/>
+		<delete file="hello.swf"/>
 	</target>
 </project>

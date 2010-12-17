@@ -1,0 +1,37 @@
+<s:Application
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	name="Hello World"
+	creationComplete="Melomel.connect()"
+>
+	<s:layout>
+		<s:VerticalLayout paddingTop="10" paddingLeft="10"/>
+	</s:layout>
+	
+	<fx:Script>
+		<![CDATA[
+
+		private function helloButton_onClick(event:MouseEvent):void
+		{
+			var firstName:String = firstNameTextInput.text;
+			var lastName:String  = lastNameTextInput.text;
+			messageLabel.text = "Hello " + firstName + " " + lastName;
+		}
+		
+		]]>
+	</fx:Script>
+	
+	<s:HGroup>
+		<s:Label text="First Name"/>
+		<s:TextInput id="firstNameTextInput"/>
+	</s:HGroup>
+		
+	<s:HGroup>
+		<s:Label text="Last Name"/>
+		<s:TextInput id="lastNameTextInput"/>
+	</s:HGroup>
+	
+	<s:Button label="Say Hello!" click="helloButton_onClick(event)"/>
+	
+	<s:Label id="messageLabel" width="250" paddingTop="10"/>
+</s:Application>
