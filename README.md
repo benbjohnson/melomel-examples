@@ -1,6 +1,8 @@
 Melomel Examples
 =============================================
 
+[![Dependency Status](https://gemnasium.com/benbjohnson/melomel-examples.png)](https://gemnasium.com/benbjohnson/melomel-examples)
+
 ## DESCRIPTION
 
 This repository is a collection of various
